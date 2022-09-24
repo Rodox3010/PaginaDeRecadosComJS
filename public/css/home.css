@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+    background-image: url(./imagens/background-paper.jpg);
+    margin: 0;
+    padding: 0;
+    color: #555;
+    padding-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*HEADER */
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 0 4px #555;
+}
+
+div.nome-pagina {
+    padding: 10px;
+    width: 50%;
+}
+
+div.nome-pagina a{
+    text-decoration: none;
+    color: #555;
+}
+
+div.nome-pagina img {
+    width: 50px;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    display: inline-block;
+    position: absolute;
+}
+
+div.nome-pagina h1 {
+    display: inline-block;
+    position: absolute;
+    color: #1b0221;
+    top: 50%;
+    left: 95px;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+div.nome-pagina h1 span {
+    color: #ff5f2d;
+}
+
+.cabecalho-menu {
+    position: absolute;
+    width: 10%;
+    right: 0px;
+    top: 15px;
+}
+
+#botao-sair-home{
+    width: 80%;
+    font-size: 15px;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background-color: #ff5f2d;
+    box-shadow: 1px 1px 4px #555;
+    border: 1px solid #fff;
+    height: 30px;
+   
+}
+.cabecalho-menu img {
+    width: 32px;
+    position: absolute;
+    right: 50px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.cabecalho-menu img:hover {
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    background-color: #fff;
+    margin: auto;
+    width: 80%;
+    min-width: 900px;
+    min-height: calc(95vh - 70px);
+    border-radius: 10px;
+    padding: 35px 20px;
+    box-sizing: border-box;
+}
+
+.titulo{
+    text-align: center;
+    padding: 10px 0 20px;
+}
+
+h2{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ff6200;
+}
+
+.entrada-dados{
+    padding: 10px 40px 10px 40px;
+    text-align: left;
+}
+
+#texto-editar{
+    padding: 0 40px 10px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#formulario-cadastrar-recados input{
+    border-radius: 7px;
+    padding: 8px 15px;
+    box-shadow: 1px 1px 4px #ff6200;
+    border: 1px solid #fff;
+}
+
+#input-descricao {
+    width:30%;
+    background-color: #ffb78a;
+    color: #555;
+}
+
+#input-detalhamento{
+    width: 57%;
+    background-color: #ffb78a;
+    color: #555;
+}
+
+#botao-cadastrar{
+    padding: 8px;
+    width: 90px;
+    background-color: #ff5f2d;
+    color:#fff;
+    display: initial;
+}
+
+#botao-cancelar{
+    padding: 8px;
+    width: 90px;
+    background-color: red;
+    color: #fff;
+    display: none;
+}
+
+#botao-cadastrar:hover{
+    cursor: pointer;
+}
+
+/*====================== TABELA ========================*/
+
+div.informacoes{
+    text-align: center;
+}
+
+div.informacoes table{
+    display: inline-block;
+    width: 95%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #555;
+}
+
+tr:nth-child(even){
+    background-color: #efefef;
+    border-radius: 0 0 10px 10px;
+}
+
+
+div.informacoes th{
+    height: 40px;
+    border-bottom: 1px solid #999;
+    background-color:#555;
+    color: #fff;
+}
+
+div.informacoes tr{
+    height: 40px;
+}
+
+div.informacoes td{
+    border-top: 1px solid #999;
+    border-radius: 0 0 10px 10px;
+}
+
+.col1 {
+    width: 800px;
+    border-radius: 10px 0 0 0;
+    border-right: 1px solid #666;
+}
+
+.col2{
+    width: 3000px;
+    border-right: 1px solid #666;
+}
+
+.col3 {
+    width: 5000px;
+    border-right: 1px solid #666;
+}
+
+.col4 {
+    width: 2000px;
+    border-radius: 0 10px 0 0;
+}
+
+.editar, .excluir{
+    padding: 5px 15px;
+    background-color: #009900;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 4px #555;
+}
+
+.excluir{
+    background-color: red;
+    margin-left: 10px;
+}
+
+.editar:hover, .excluir:hover{
+    cursor: pointer;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled)
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+/* div.informacoes th, div.informacoes td{
+    position:relative;
+    width: 50%;
+} */
+
+
+
+
+

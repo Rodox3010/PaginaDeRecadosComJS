@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+body {
+    background-image: url("../img/background-paper.jpg");
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+
+.z-index {
+    z-index: 9999;
+}
+
+.main-total {
+    display: flex;
+    width: 90%;
+    min-width: 900px;
+    height: 95vh;
+    position: relative;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 8px 9px 16px 0 rgb(0 0 0 / 70%);
+}
+
+main div.imagem {
+    width: 70%;
+    height: 100%;
+    /* background-color: #7d5f8e; */
+    position:absolute;
+    left: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+main div.imagem img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: rgb(30, 21, 21);
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+main div.dados {
+    width: 30%;
+    height: 100%;
+    /* background: #86ea6a; */
+    position: absolute;
+    right: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+main div.dados div.center{
+    text-align: center;
+    /* background-color: blue; */
+    width:90%;
+    display: inline-block;
+    top: 50%;
+    transform:translateY(-50%);
+    position: relative;
+}
+
+main div.dados img{
+    height: 130px;
+    display: inline-block;
+}
+
+ main div.dados h1{
+     text-transform: uppercase;
+     font-family: 'Poppins', sans-serif;
+     font-size: 32px;
+     color: #1b0221;
+     margin: 10px auto 20px;
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+}
+main div.dados h1 span{
+    color: #ff5f2d;
+}
+
+.modal-input{
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+}
+main div.dados form input{
+    display: inline-block;
+    width: 90%;
+    padding: 8px;
+    border: 0;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.btn{
+    background-color: #ff5f2d;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-transform: uppercase;
+}
+
+main div.dados form input.btn .button-login:hover{
+
+    cursor: pointer;
+}
+
+main div.dados form input.btn .button-login:active {
+    box-shadow: 2px 2px 4px 0 rgb(255, 0, 0);    
+    box-shadow: inset 2px 3px 7px 1px rgb(255, 0, 0);
+}
+
+main div.dados form p {
+    margin-top: 10px;
+    color: #555;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    top: 220px;
+}
+
+main div.dados form p a{
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+main div.dados form p a span{
+    color: #7d5f8e;
+    font-weight: 700;
+}
+
+.link-default {
+    color: #ff5f2d;
+   
+}
+.link-default:hover {
+    background-color: #1b0221;
+    box-shadow: 2px 2px 8px 0 #ff5f2d;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+/* -- MODAL --*/
+
+
+#modal-header {
+    height: 20px;
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    width: 40%;
+    height: 58%;
+    background-color: #363636;
+    overflow: hidden;
+}
+.modal-dialog {
+
+    position: absolute;
+    top: 0;
+    width: 65%;
+    height: 85%;
+    left: 17%;
+    margin: 0;
+}
+.modal-content {
+    position: absolute;
+    top: 20%;
+    height: 73%;
+    width: 100%;
+    background: rgb(46 46 46 / 80%);
+    border-radius: 10px;
+    align-items: inherit;
+    box-shadow: 8px 8px 8px rgb(0 0 0 / 65%);
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding: 0;
+    color: #ffc632;
+    font-size: 40px;
+    justify-content: center;
+}
+
+/* -- FIM -- MODAL --*/
+
+/* -- BTN-BOTÃO --*/
+#button-create {
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff5f2d;
+}
+
+.button-default {
+    font-size: 15px;
+    background-color: #ffc632;
+    font-family: inherit;
+    width: 60%;
+    height: 40px;
+    border-radius: 0;
+    color: #363636;
+    margin-left: 20%;
+    cursor: pointer;
+}
+
+.button-login:hover,
+.button-default:hover {
+    background: #1b0221;;
+    color: #ffffff;
+    box-shadow: 0 6px 4px 0 rgb(255 198 50 / 24%);
+}
+
+.btn-close {
+    width: 5px !important;
+    height: 5px !important;
+    margin: 10px 10px -.5rem auto !important;
+    background: url(/public/images/close.svg) center/1em auto no-repeat;
+}
+
